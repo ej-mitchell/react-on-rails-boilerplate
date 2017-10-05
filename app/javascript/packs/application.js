@@ -8,3 +8,18 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Stateless from '../src/components/Stateless';
+import Stateful from '../src/containers/Stateful';
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.getElementById("stateless")) {
+    ReactDOM.render(<Stateless />, document.getElementById("stateless"));
+  }
+
+  if (document.getElementById("stateful")) {
+    ReactDOM.render(<Stateful />, document.getElementById("stateful"));
+  }
+});
