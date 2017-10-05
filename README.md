@@ -2,7 +2,7 @@
 
 ## Background
 
-This boilerplate uses the most recent release of Rails (as of 09/2017, 5.1.4). It also takes advantage of the Webpacker gem to integrate React ([link to gem](https://github.com/rails/webpacker)). Reasons for this can be found on my blog (link to come). As a bonus, the React testing environment is also set up for you, using Jasmine/Enzyme with PhantomJS. To set up this testing environment, I used this gist from my friend ([link to gist](https://gist.github.com/andrewprogers/65f0228c262fbe8e1efe767527540aec)).
+This boilerplate uses the most recent release of Rails (as of 09/2017, 5.1.4). It also takes advantage of the Webpacker gem to integrate React ([link to gem](https://github.com/rails/webpacker)). Reasons for this can be found on my blog ([link to blog](https://medium.com/@skywalkerjane92/reasons-to-use-the-webpacker-gem-45e19d71d9f1)). As a bonus, the React testing environment is also set up for you, using Jasmine/Enzyme with PhantomJS. To set up this testing environment, I used this gist from my friend ([link to gist](https://gist.github.com/andrewprogers/65f0228c262fbe8e1efe767527540aec)).
 
 ## How-to
 
