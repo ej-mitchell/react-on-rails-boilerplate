@@ -1,25 +1,25 @@
 source 'https://rubygems.org/'
 
-gem 'rails', '~> 5.1.2'
-gem 'pg', '~> 0.18'
-gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'rails'
+gem 'pg'
+gem 'puma'
+gem 'sass-rails'
+gem 'uglifier'
 gem 'jquery-rails'
-gem 'webpacker', '~> 3.0'
+gem 'webpacker'
 
 group :development do
-  gem 'listen', '~> 3.0.5'
+  gem 'listen'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
 
 group :development, :test do
-  gem 'capybara'
-  gem 'factory_girl_rails'
+  gem 'capybara' #20190409: be careful with this one with macOS Mojave!!
+  gem 'factory_bot_rails'
   gem 'launchy', require: false
   gem 'pry-rails'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails'
   gem 'shoulda'
   gem 'valid_attribute'
 end
