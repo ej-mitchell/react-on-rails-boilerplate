@@ -2,15 +2,17 @@
 
 ## Background
 
-This boilerplate uses the most recent release of Rails (as of 09/2017, 5.1.4). It also takes advantage of the Webpacker gem to integrate React ([link to gem](https://github.com/rails/webpacker)). Reasons for this can be found on my blog ([link to blog](https://medium.com/@skywalkerjane92/reasons-to-use-the-webpacker-gem-45e19d71d9f1)). As a bonus, the React testing environment is also set up for you, using Jasmine/Enzyme with PhantomJS. To set up this testing environment, I used this gist from my friend ([link to gist](https://gist.github.com/andrewprogers/65f0228c262fbe8e1efe767527540aec)).
+This boilerplate uses the most recent release of Rails (as of 04/2019, 5.2.1). It also takes advantage of the Webpacker gem to integrate React ([link to gem](https://github.com/rails/webpacker)). As a bonus, the React testing environment is also set up for you, using Jasmine/Enzyme with PhantomJS. To set up this testing environment, I used this gist from my friend ([link to gist](https://gist.github.com/andrewprogers/65f0228c262fbe8e1efe767527540aec)).
+
+Note that as of 04/2019, I have updated the Gemfile to not contain any version numbers. There were some updates since 2017. Ya know... just _some_. (Read as: A few hours of figuring out why everything was borked.)
 
 ## How-to
 
 * Clone down this repo to your desktop and rename as necessary.
 * Run `bundle` and `npm install` to get all the dependencies sorted out.
-* Run `rake db:create` to set up your database properly.
+* Run `rake db:create` to set up your database properly. (_Be sure to rename all the appropriate stuff in the config files!_)
 * Before testing with React, you will need to add the location of your `testHelper.js` to the `karma.conf.js` file. To do this, navigate to `karma.conf.js` and paste the `testHelper.js` file path into the `files` array (I've also left a comment and an example there for you). It is also possible that you will need to run `karma init`. You can answer the questions from the prompt using [this gist](https://gist.github.com/andrewprogers/65f0228c262fbe8e1efe767527540aec).
-* When you want to run the servers to see your work locally, run both `rails s` and `npm start` (separate tabs in the same project folder).
+* When you want to run the servers to see your work locally, run both `rails s`.
 * When you want to check your React tests, run `npm test`. (Run `rake` for Rails/Ruby tests.)
 
 
